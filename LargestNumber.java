@@ -1,28 +1,30 @@
 import java.util.*;
+
 public class LargestNumber {
 
-    public static void main(String[] args) {
-        int number1;
-        int number2;
-        int number3;
-        int highestNumber;
+    public static void main(String[] args) {        
+        int highestNumber;    
+
+        List<Integer> numbers = new ArrayList<>();
 
         Scanner inp = new Scanner(System.in);
 
         System.out.print("\nPlease enter the 1st number: ");//enter the 1st number
-        number1 = inp.nextInt();
+        numbers.add(inp.nextInt());   
 
         System.out.print("\nPlease enter the 2nd number: ");//enter the 2nd number
-        number2 = inp.nextInt();
-        
+        numbers.add(inp.nextInt());  
+
         System.out.print("\nPlease enter the 3rd number: ");//enter the 3rd number
-        number3 = inp.nextInt();
+        numbers.add(inp.nextInt());    
+        inp.close();
         
-        highestNumber = number1>number2?(number1>number3?number1:number3):(number2>number3?number2:number3);
-       
-        
-        if(number1 == number2 && number2 == number3)
-        System.out.println("All numbers are equal");    
+        Collections.sort(numbers);
+        highestNumber = numbers.get(numbers.size()-1);
+
+        if(numbers.get(0) == numbers.get(1) && numbers.get(2) == numbers.get(1))
+        System.out.println("All numbers are equal");   
+
         else
         System.out.println("The highest number is "+highestNumber);      
         

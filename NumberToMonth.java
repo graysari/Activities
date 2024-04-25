@@ -8,7 +8,7 @@ public class NumberToMonth {
         
        System.out.print("Please enter the number of month: ");//enter the number of month
        numberOfMonth = inp.nextInt();
-       
+       inp.close();
        int numberOfDays;
        if(numberOfMonth>7) 
        numberOfDays =numberOfMonth%2==0?31:30;

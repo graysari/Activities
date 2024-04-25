@@ -7,7 +7,7 @@ public class NumberToDay {
         
         System.out.print("Please enter the number of day: ");//enter the number of day
        numberOfDay = inp.nextInt();
-       
+        inp.close();
       
            
        switch(numberOfDay){

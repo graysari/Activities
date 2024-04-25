@@ -6,7 +6,7 @@ public class oddEvenPosNegZero {
         System.out.print("Please enter a number: ");
         Scanner inp = new Scanner(System.in);
         number = inp.nextInt();
-        
+        inp.close();
         String odd;
         String possitive;
         String zero;
