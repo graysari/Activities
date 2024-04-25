@@ -18,9 +18,7 @@ public class NumberToDay {
            case 5:   System.out.println("FRIDAY");break;
            case 6:   System.out.println("SATURDAY");break;
            case 7:   System.out.println("SUNDAY");break;
-           default: System.out.println("INVALID NUMBER");
-       
-       
+           default: System.out.println("INVALID NUMBER");break;
        }
     
     }
